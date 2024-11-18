@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmeriSurveyors</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="shortcut icon" href="assets/favicon/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="logo-container">
+            <div class="logo">
+                <span class="logo-icon">
+                    <img src="assets/img-other/menu.svg" alt="menu-icon">
+                </span>
+                <span class="logo-name">
+                    <a href="index.html">AmeriSurveyors</a>
+                </span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="#service-locations">Service Areas</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <span>
+                        <br>
+                        <hr><br>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up</a></li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-buttons">
+            <button class="btn1 sign-up" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up</button>
+            <a href="order.html"><button class="btn1 order">Order</button></a>
+        </div>
+    </header>
+
+    <!--REGISTER MODAL-->
+    <div class="modal fade" style="top: 15%;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign Up Here</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-4 pb-4">
+                    <div class="input-group pb-3">
+                        <span class="input-group-text">First and last name</span>
+                        <input type="text" aria-label="First name" class="form-control" id="firstName">
+                        <input type="text" aria-label="Last name" class="form-control" id="lastName">
+                    </div>
+                    <div class="input-group pb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Company</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="company">
+                    </div>
+                    <div class="input-group pb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                        <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="email">
+                    </div>
+                    <div class="row g-3 align-items-center pb-3">
+                        <div class="col-auto">
+                            <label for="inputPassword6" class="col-form-label">Password</label>
+                        </div>
+                        <div class="col">
+                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" id="password">
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center pb-3">
+                        <div class="col-auto">
+                            <label for="inputPassword6" class="col-form-label">Confirm Password</label>
+                        </div>
+                        <div class="col">
+                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" id="passwordConfirm">
+                        </div>
+                    </div>
+                    <select class="form-select" aria-label="Default select example" id="occupation">
+                        <option selected>Select</option>
+                        <option value="Buyer">Buyer</option>
+                        <option value="Seller">Seller</option>
+                        <option value="Lender">Lender</option>
+                        <option value="Title_Company">Title Company</option>
+                        <option value="Builder">Builder</option>
+                        <option value="Realtor">Realtor</option>
+                        <option value="Architech">Architech</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Legal">Legal</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-image" id="hero-image">
+                <div class="image-card">
+                    <span>
+                        Excellence
+                        <span class="card-text-1"> In Land Surveying .
+                            <span class="card-text-2">
+                                AmeriSurveyors LLC is a full-service
+                                professional land surveying firm that is
+                                headquartered in San Antonio, Texas. Our
+                                staff are qualified in their area of expertise
+                                and include; Texas registered professional
+                                land surveyors, certified title abstractors,
+                                CAD survey technicians,
+                                field crews and administrative personnel.
+                            </span>
+                    </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="hero-cards">
+                <div class="cards-grid">
+                    <div class="card services" onclick="btn('services.html')">
+                        <div>Our <br> Services</div>
+                    </div>
+                    <div class="card locations" onclick="btn('#service-locations')">
+                        <div>Locations</div>
+                    </div>
+                    <div class="card clients">
+                        <div>3K+
+                            <span class="client-span">Clients</span>
+                            <span class="img-span">
+                                <img src="assets/img-other/stars.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card other">
+                        <div class="contact" onclick="btn('index.html')">
+                            <div>Home</div>
+                        </div>
+                        <div class="about-us" onclick="btn('about-us.html')">
+                            <div>About Us</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-description">
+                <span style="font-weight: 400;"> AmeriSurveyors LLC </span> is a full-service professional land surveying firm that is headquartered in San Antonio, Texas. Our staff are qualified in their area of expertise and include; Texas registered
+                professional land surveyors, certified title abstractors, CAD survey technicians, field crews and administrative personnel.
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-us" id="contact-us">
+        <div class="heading">Contact Us</div>
+        <p>To help us best serve your need, use this form, and let us know your specific land survey inquiry. You may also email or call us during our business hours. Our general response time for email inquiries is one business day.</p>
+        <div class="order-list-container ms-5 me-5">
+            <div class="mb-3 mt-5">
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon3">First Name*</span>
+                    <input type="text" class="form-control" id="streetAddress" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+                <div class="input-group mt-2">
+                    <span class="input-group-text" id="basic-addon3">Last Name*</span>
+                    <input type="text" class="form-control" id="streetAddress" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon3">Email*</span>
+                    <input type="email" class="form-control" id="streetAddress" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon3">Contact Number*</span>
+                    <input type="text" class="form-control" id="streetAddress" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+            </div>
+
+            <h6 class="mt-5 mb-3">Reason of Inquiry</h6>
+            <table>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="asBuiltSurvey">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                As-Built Survey
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="boundrySurvey">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                Boundry Survey
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="formSurvey">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                Form Survey
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                Building Envelope Survey
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                Typographic Survey
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                Tree Survey
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                Elevation Certificate
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                Commercial ALTA/NSPS Survey &nbsp;
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                Estement Survey
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                TABC Survey
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                                Other Services
+                            </label>
+                    </td>
+                </tr>
+            </table>
+
+            <h6 class="mt-5 mb-3">Additional Notes</h6>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message here... "></textarea>
+            <br><br><br>
+
+            <div class="mb-3 mt-3">
+                <button class="btn btn-outline-primary">Submit</button>
+            </div>
+
+            <h5 class="mt-5">
+                Email &nbsp;&nbsp;: &nbsp;&nbsp;<a href="">info@amerisurveyors.com</a>
+            </h5>
+        </div>
+
+        <hr>
+
+        <div class="contact-list-container mb-5">
+
+            <div class="contact-list">
+                <div class="contact-card">
+                    <div class="contact-name">San Antonio</div>
+                    <div class="contact-address">1185 Warfield Street <br> San Antonio, Texas 78216</div>
+                    <div class="contact-no" onclick="btn('tel:+12105721995')">+1 210572 1995</div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-name">Dallas</div>
+                    <div class="contact-address">101 West McDermott Drive <br> suite 115 Allen, Texas 75013</div>
+                    <div class="contact-no" onclick="btn('tel:+12146774966')">+1 214677 4966</div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-name">Austin</div>
+                    <div class="contact-address">1185 Warfield Street <br> San Antonio, Texas 78216</div>
+                    <div class="contact-no" onclick="btn('tel:+15126613044')">+1 512661 3044</div>
+                </div>
+            </div>
+        </div>
+        <center>Office Hours | Mon - Fri | 0830hrs - 1700hrs</center>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Home</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Career Inquiry</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Client Support Team</a></li>
+                    <li><a href="#">Field Survey Team</a></li>
+                    <li><a href="#">Services Support Team</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Operating Areas</h4>
+                <ul>
+                    <li><a href="#">South Texas</a></li>
+                    <li><a href="#">Central Texas</a></li>
+                    <li><a href="#">North Texas</a></li>
+                    <li><a href="#">San Francisco</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">As-Built Survey</a></li>
+                    <li><a href="#">Boundary Survey</a></li>
+                    <li><a href="#">Form Survey</a></li>
+                    <li><a href="#">Building Envelope <br> Survey</a></li>
+                    <li><a href="#">Topographic Survey</a></li>
+                    <li><a href="#">Tree Survey</a></li>
+                    <li><a href="#">Elevation Certificate</a></li>
+                    <li><a href="#">Commercial/<br>NSPS Survey</a></li>
+                    <li><a href="#">Easement Survey</a></li>
+                    <li><a href="#">TABC Survey</a></li>
+                    <li><a href="#">Other Services</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <p>Connect On</p>
+                <div class="icons">
+                    <a href="#" title="email"><img src="assets/socials/email.svg" alt="Email"></a>
+                    <a href="#"><img src="assets/socials/youtube.svg" alt="YouTube"></a>
+                    <a href="#"><img src="assets/socials/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="assets/socials/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="assets/socials/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="assets/socials/tiktok.svg" alt="TikTok"></a>
+                </div>
+            </div>
+            <div class="legal-info">
+                <p>Firm Registration No. 10146400 | San Antonio, Texas</p>
+                <p>Firm Registration No. 10193905 | Dallas, Texas</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="copyright-info">
+            <p>Copyright &copy; 2021 - 2024 AmeriSurveyors, LLC.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>

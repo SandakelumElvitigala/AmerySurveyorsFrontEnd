@@ -1,0 +1,846 @@
+@charset "UTF-8";
+/* AmeriSurveyors website main style CSS Document */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Helvetica Neue, sans-serif;
+}
+/*====================== common across all sections ======================*/
+h1 {
+  font-size: 55px;
+}
+h2 {
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 30px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 17px;
+}
+.banner-img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 150px;
+}
+.box-exp-txt {
+  color: #0E2B4C;
+  text-align: left;
+}
+.box-exp-txt h2 {
+  text-align: center;
+}
+.box-exp-txt p {
+  font-size: 25px;
+  font-weight: 300;
+}
+.btn {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.form-control {
+  height: calc(1.5em + .75em + 8px)
+}
+/*====================== header section ======================*/
+.logo-size {
+  width: 330px;
+  height: 110px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+/*====================== home main carousal section ======================*/
+.carousel-item {
+  height: 50rem;
+  background: #000;
+  color: #ffffff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.carou-cnt h4 {
+  font-weight: 300;
+  color: #ffffff;
+}
+.carou-cnt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 100px;
+}
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+/* ===== home operational areas section ===== */
+.opareas-home {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.opareas-home h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: #0E2B4C;
+  padding-bottom: 50px;
+}
+.opareas-county a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+}
+.btn-color-orange {
+  margin-bottom: 35px;
+  color: #F37828;
+  border: 1px solid #F37828;
+}
+.btn-color-orange:hover {
+  color: #ffffff;
+  background-color: #F37828;
+  border: none;
+}
+.opareas-survman {
+  padding-top: 50px;
+  padding-left: 100px;
+}
+.opareas-survman img {
+  width: 100%;
+}
+/* ===== home survey types section ===== */
+.hm-survey-type {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.hm-survey-type h2 {
+  padding-bottom: 20px;
+  text-align: center;
+  color: #0E2B4C;
+}
+.hm-survey-type h3 {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #0E2B4C;
+  padding-bottom: 50px;
+}
+.hm-survey-type a {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 50px 0 50px 0;
+}
+.btn-color-grey {
+  margin-bottom: 35px;
+  color: #0E2B4C;
+  background-color: #E7E7E9;
+  border: none;
+}
+.btn-color-grey:hover {
+  color: #0E2B4C;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+}
+/*====================== home contact section======================*/
+.hm-cntct-txt h3 {
+  text-align: center;
+  color: #0E2B4C;
+}
+.hm-cntct-txt h4 {
+  text-align: center;
+  font-weight: 300;
+  color: #0E2B4C;
+}
+/*====================== about us ======================*/
+.amerisur-teams {
+  margin: 0 auto;
+  color: #0E2B4C;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.amerisur-teams img {
+  width: 100%;
+  padding: 20px;
+}
+.amerisur-teams h6 {
+  padding-top: 8px;
+}
+.amerisur-teams p {
+  font-size: 15px;
+}
+/*====================== footer section ======================*/
+.ftr-bckgrnd {
+  background-color: #0E2B4C;
+  margin-top: 150px;
+}
+hr {
+  background-color: #2D87F0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.ftr-txt h5 {
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.ftr-txt {
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 300;
+}
+.ftr-txt a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.ftr-txt a:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+  color: #2D87F0;
+}
+.cnct-media-icon {
+  width: 25px;
+  padding: 5px 0px 5px 0px;
+}
+.ftr-txt-reg {
+  font-weight: 300;
+  color: #ffffff;
+  padding-left: 20px;
+}
+.ftr-txt-cprt {
+  color: #ffffff;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+/* ====================== operating county areas ====================== */
+.oparea-txt h2 {
+  color: #0E2B4C;
+  text-align: center;
+  text-transform: capitalize;
+}
+.oparea-txt h3 {
+  color: #0E2B4C;
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 50px;
+}
+.county-list ul li {
+  width: auto;
+  font-size: 30px;
+  font-weight: 300;
+  color: #0E2B4C;
+  margin-left: 100px
+}
+::marker {
+  color: #0E2B4C;
+  font-size: 30px;
+}
+.county-img-sze {
+  margin: 0 auto;
+  width: 65%;
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+/* ====================== contact details box  ====================== */
+.contact-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contact-box h3 {
+  font-size: 25px;
+  font-weight: 200px;
+  color: #0E2B4C;
+  padding: 20px 0 20px 30px;
+}
+.contact-box-txt {
+  text-align: center;
+  color: #0E2B4C;
+}
+.contact-box-txt h4 {
+  font-size: 25px;
+  padding: 20px 0 10px 0;
+}
+.contact-box-txt p {
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.contact-box-txt h5 {
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #2D87F0;
+  padding: 15px;
+  text-decoration: none;
+}
+.contact-box-txt h6 {
+  font-weight: 400;
+  color: #0E2B4C;
+  padding: 15px;
+}
+.contact-box-dfw {
+  border-left: 1px solid #707070;
+  border-right: 1px solid #707070;
+}
+/* ====================== login and sign up pages ====================== */
+.logsignup-cntnr {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding: 50px 175px 50px 175px;
+}
+.logsignup-cnt-dtl h3 {
+  text-align: center;
+  color: #0E2B4C;
+  padding-bottom: 15px;
+}
+.logsignup-cnt-dtl h5 {
+  color: #0E2B4C;
+  padding-top: 10px
+}
+.logsignup-cnt-dtl-chkbox {
+  color: #9B9B9B;
+}
+.logsignup-cnt-dtl-chkbox input {
+  margin-right: 10px;
+}
+.logsignup-cnt-dtl p {
+  color: #F3080C;
+  background-color: #F7F7F7;
+  text-align: center;
+  padding: 10px 10px;
+}
+.logsignup-cnt-dtl a {
+  color: dimgrey;
+}
+.pwd-reset h6 {
+  color: #707070;
+  padding-top: 50px;
+}
+.pwd-reset h6:hover {
+  color: #C11B1B;
+  transition: 0.5s;
+}
+.blue-logsignup-bckgrnd {
+  background-color: #2D87F0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+.blue-logsignup-bckgrnd a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.blue-logsignup-bckgrnd a:hover {
+  color: #0E2B4C;
+  transition: 0.5s;
+}
+/* ====================== terms and conditions ====================== */
+.terms-conditions {
+  color: #0E2B4C;
+  padding: 50px;
+  margin-top: 150px;
+}
+.terms-conditions h3 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.terms-conditions b {
+  font-size: 20px;
+  font-weight: 700;
+}
+.terms-conditions p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+/* ====================== contact career inquiry pages ====================== */
+.contact-cnt-bckgrnd {
+  background-color: #F7F7F7;
+  margin-bottom: 100px;
+  color: #0E2B4C;
+  padding: 50px 175px 50px 175px;
+}
+.contact-cnt-bckgrnd h2 {
+  font-size: 45px;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.contact-cnt-bckgrnd p {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.contact-cnt-bckgrnd h3 {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.contact-form-txtmsge label {
+  font-size: 15px;
+}
+.contact-form-txtmsge textarea {
+  font-size: 12px;
+  color: #707070;
+}
+.contact-form-surv-type label {
+  padding-left: 10px;
+}
+/* ====================== place order ====================== */
+.temp-order-text p {
+  text-align: center;
+  background-color: #E7E7E9;
+  color: red;
+  padding: 10px 10px;
+}
+.temp-order-text a {
+  color: dimgrey;
+}
+.odrform-cnt-bckgrnd {
+  background-color: #F7F7F7;
+  margin-bottom: 100px;
+  color: #0E2B4C;
+  padding: 50px 175px 50px 175px;
+}
+.odrform-cnt-bckgrnd h5 {
+  padding-bottom: 5px;
+}
+.odrform-cnt-bckgrnd h6 {
+  color: #2D87F0;
+  padding-bottom: 5px;
+}
+#searchBox {
+  color: #3A5E88;
+  margin-bottom: 20px;
+}
+.addressForm {
+  margin-bottom: 50px;
+  width: 80%;
+}
+.addressForm input {
+  color: #3A5E88;
+  margin-bottom: 10px;
+}
+.lgldes-tble-qst b {
+  font-weight: 450;
+  margin-right: 20px;
+}
+.lgldes-tble-qst label {
+  padding: 5px;
+}
+.scheduleAB-select h6 {
+  padding-right: 23px;
+}
+.scheduleAB-select input {
+  margin-left: 30px;
+}
+.scheduleAB-select label {
+  padding-left: 10px;
+}
+.scheduleAB-select select {
+  margin-left: 27px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #D2D2D2;
+  border-radius: 5px;
+}
+.scheduleAB-select p {
+  padding-top: 10px;
+}
+.survTypReqTble table {
+  width: 90%;
+}
+.survTypReqTble label {
+  padding-left: 5px;
+}
+.survey-request h5 {
+  color: #2D87F0;
+}
+.survey-request h6 {
+  color: #0E2B4C;
+  padding-right: 8px;
+}
+.survey-request p {
+  color: #2D87F0;
+}
+.survey-requestEstimate {
+  margin-bottom: 50px;
+}
+.survey-requestEstimate input {
+  background-color: #F8F8F8;
+  color: #0E2B4C;
+  margin-left: 10px;
+  padding: 10px 0;
+}
+.payment-method td {
+  padding-bottom: 15px;
+}
+.credit-card-img {
+  width: 25%;
+}
+.pmt-radio-btn {
+  margin-right: 10px;
+}
+/* ====================== survey type pages ====================== */
+.surv-types-smple {
+  margin-top: 100px;
+}
+.surv-types-smple h5 {
+  text-align: center;
+  color: #0E2B4C;
+}
+.surv-types-smple img {
+  width: 100%;
+}
+.surv-types-cntct {
+  padding: 50px;
+}
+.surv-types-cntct img {
+  width: 70%;
+}
+.surv-types-cntct h5 {
+  color: #0E2B4C;
+  margin-top: 150px;
+  padding-bottom: 30px;
+}
+/* ================================================================== */
+/* tablet devices */
+@media (max-width: 1199px) {
+  /* header section */
+  .logo-size {
+    width: 165px;
+    height: 55px;
+  }
+  h2 {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+  .box-exp-txt p {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .banner-img {
+    margin-bottom: 50px;
+  }
+  /*======================home contact section======================*/
+  .hm-cntct-txt h2 {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* footer section */
+  .ftr-bckgrnd {
+    margin-top: 120px;
+  }
+  /*operating county areas */
+  .county-img-sze {
+    width: 75%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .county-list ul li {
+    font-size: 25px;
+  }
+  /* contact details box */
+  .contact-box {
+    box-shadow: 0 0 0 0;
+  }
+  .contact-box h3 {
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 0 0 0;
+  }
+  .contact-box-dfw {
+    border-left: none;
+    border-right: none;
+  }
+  /* ===== home operational areas section ===== */
+  .opareas-home h1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  .opareas-survman {
+    margin: 0 auto;
+  }
+  .opareas-survman img {
+    width: 80%;
+  }
+  /* ====================== contact career inquiry pages ====================== */
+  .contact-cnt-bckgrnd {
+    border: none;
+    padding: 50px;
+  }
+  /* ====================== place order ====================== */
+  .odrform-cnt-bckgrnd {
+    padding: 50px 75px 50px 75px;
+  }
+  .addressForm {
+    width: 95%;
+  }
+  /* ====================== login and sign up pages ====================== */
+  .logsignup-cntnr {
+    box-shadow: 0 0 0 0;
+    padding: 50px;
+  }
+}
+/* ================================================================== */
+/* mobile devices */
+@media (max-width: 430px) {
+  /* header section */
+  .logo-size {
+    width: 165px;
+    height: 55px;
+  }
+  /*======================home main carousal section======================*/
+  h1 {
+    font-size: 35px;
+  }
+  .carou-cnt {
+    padding-bottom: 400px;
+  }
+  .carou-cnt h4 {
+    font-size: 25px;
+  }
+  /* footer section */
+  h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  h5 {
+    font-size: 17px;
+    padding-bottom: 0px;
+  }
+  h6 {
+    font-size: 15px;
+  }
+  .ftr-txt {
+    font-size: 12px;
+  }
+  .ftr-bckgrnd {
+    margin-top: 0px;
+  }
+  .ftr-txt-reg {
+    font-size: 12px;
+    padding: 0;
+    text-align: center;
+  }
+  .banner-img {
+    margin-bottom: 30px;
+  }
+  .box-exp-txt p {
+    font-size: 15px;
+    font-weight: 350;
+  }
+  /*operating county areas */
+  .county-img-sze {
+    width: 85%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .county-list ul li {
+    font-size: 20px;
+  }
+  /* contact details box */
+  .contact-box {
+    box-shadow: 0 0 0 0;
+  }
+  .contact-box h3 {
+    text-align: center;
+    font-size: 17px;
+    padding: 0;
+  }
+  .contact-box-dfw {
+    border-left: none;
+    border-right: none;
+  }
+  .contact-box-txt h6 {
+    font-size: 15px;
+  }
+  /*======================home contact section======================*/
+  .hm-cntct-txt h3 {
+    font-size: 30px;
+  }
+  .hm-cntct-txt h4 {
+    font-size: 25px;
+  }
+  /*====================== about us ======================*/
+  .amerisur-teams {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .amerisur-teams img {
+    padding: 5px;
+  }
+  .amerisur-teams p {
+    font-size: 10px;
+  }
+  /* ===== home operational areas section ===== */
+  .opareas-home {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .opareas-home h1 {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+  .opareas-county a {
+    font-size: 18px;
+  }
+  .opareas-survman {
+    margin: 0 auto;
+  }
+  .opareas-survman img {
+    width: 90%;
+  }
+  /* ===== home survey types section ===== */
+  .hm-survey-type {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .hm-survey-type h3 {
+    font-size: 25px;
+  }
+  .hm-survey-type a {
+    padding: 30px 0 30px 0;
+  }
+  /* ====================== login and sign up pages ====================== */
+  .logsignup-cntnr {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  .logsignup-cnt-dtl h3 {
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .logsignup-cnt-dtl h5 {
+    padding-top: 0;
+  }
+  .logsignup-cnt-dtl-chkbox {
+    font-size: 12px;
+  }
+  .pwd-reset h6 {
+    font-size: 15px;
+    padding-top: 30px;
+  }
+  .blue-logsignup-bckgrnd {
+    padding: 10px;
+    margin-top: 30px;
+  }
+  /* ====================== terms and conditions ====================== */
+  .terms-conditions {
+    border: none;
+    padding: 30px;
+    margin-top: 0;
+  }
+  .terms-conditions h3 {
+    font-size: 20px;
+  }
+  .terms-conditions b {
+    font-size: 15px;
+  }
+  .terms-conditions p {
+    font-size: 12px;
+  }
+  /* ====================== contact career inquiry pages ====================== */
+  .contact-cnt-bckgrnd {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 40px;
+  }
+  .contact-cnt-bckgrnd h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .contact-cnt-bckgrnd p {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+  .contact-cnt-bckgrnd h3 {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .contact-form-txtmsge label {
+    font-size: 12px;
+  }
+  .contact-form-txtmsge textarea {
+    font-size: 12px;
+  }
+  .contact-form-surv-type label {
+    font-size: 12px;
+  }
+  /* ====================== place order ====================== */
+  .odrform-cnt-bckgrnd {
+    background-color: #ffffff;
+    padding: 20px 30px 20px 30px;
+  }
+  .addressForm input {
+    margin-left: 5px;
+    padding-left: 5px;
+  }
+  .addressForm {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .addressForm {
+    width: 100%;
+  }
+  .lgldes-tble-qst b {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .lgldes-tble-qst label {
+    font-size: 15px;
+  }
+  .survTypReqTble table {
+    width: 100%;
+  }
+  .survTypReqTble label {
+    font-size: 13px;
+    font-weight: 450;
+  }
+  .survey-requestEstimate input {
+    background-color: #ffffff;
+  }
+  .survey-request p {
+    font-size: 12px;
+  }
+  .scheduleAB-select p {
+    font-size: 13px;
+  }
+  .credit-card-img {
+    width: 50%;
+  }
+  /* ====================== survey type pages ====================== */
+  .surv-types-smple {
+    margin-top: 30px;
+  }
+  .surv-types-cntct img {
+    width: 100%;
+  }
+  .surv-types-cntct h5 {
+    margin-top: 100px;
+    padding-bottom: 150px;
+  }
+}

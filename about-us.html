@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="AmeriSurveyors LLC is a San Antonio, Texas based full-service professional land surveying firm, which utilizes state-of-the-art instruments and qualified personnel to produce and deliver on-time, accurate land surveys.">
+    <meta name="Keywords" content="Amerisurveyors, As-Built Survey, Boundary Survey, Building Envelope Survey, Commercial ALTA/NSPS Survey, Easement Survey, Elevation Certificate, Form Survey, TABC Survey, Topographic Survey, Tree Survey">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Team</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles-other.css">
+
+    <link rel="shortcut icon" href="assets/favicon/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="logo-container">
+            <div class="logo">
+                <span class="logo-icon">
+                    <img src="../assets/img-other/menu.svg" alt="menu-icon">
+                </span>
+                <span class="logo-name">
+                    <a href="index.html">AmeriSurveyors</a>
+                </span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li onclick="btn('../index.html')">Home</li>
+                    <li onclick="btn('../index.html#our-services')">Our Services</li>
+                    <li onclick="btn('../index.html#service-locations')">Service Areas</li>
+                    <li onclick="btn('../index.html#contac-us')">Contact</li>
+                    <li onclick="btn('#')">About Us</li>
+                    <span>
+                        <br>
+                        <hr><br>
+                        <li onclick="btn('order.html')">Order</li>
+                        <li data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up</li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-buttons">
+            <button class="btn1 sign-up" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up</button>
+            <a href="order.html"><button class="btn1 order">Order</button></a>
+        </div>
+    </header>
+
+    <!--REGISTER MODAL-->
+    <div class="modal fade" style="top: 15%;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign Up Here</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-4 pb-4">
+                    <div class="input-group pb-3">
+                        <span class="input-group-text">First and last name</span>
+                        <input type="text" aria-label="First name" class="form-control" id="firstName">
+                        <input type="text" aria-label="Last name" class="form-control" id="lastName">
+                    </div>
+                    <div class="input-group pb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Company</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="company">
+                    </div>
+                    <div class="input-group pb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                        <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="email">
+                    </div>
+                    <div class="row g-3 align-items-center pb-3">
+                        <div class="col-auto">
+                            <label for="inputPassword6" class="col-form-label">Password</label>
+                        </div>
+                        <div class="col">
+                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" id="password">
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center pb-3">
+                        <div class="col-auto">
+                            <label for="inputPassword6" class="col-form-label">Confirm Password</label>
+                        </div>
+                        <div class="col">
+                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" id="passwordConfirm">
+                        </div>
+                    </div>
+                    <select class="form-select" aria-label="Default select example" id="occupation">
+                        <option selected>Select</option>
+                        <option value="Buyer">Buyer</option>
+                        <option value="Seller">Seller</option>
+                        <option value="Lender">Lender</option>
+                        <option value="Title_Company">Title Company</option>
+                        <option value="Builder">Builder</option>
+                        <option value="Realtor">Realtor</option>
+                        <option value="Architech">Architech</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Legal">Legal</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Section  -->
+    <main>
+
+        <div class="container surv-types-smple text-center">
+            <h5 class="heading mb-5">About Us</h5>
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="width:100%;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/img-other/ourstorybanner.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img-other/ourteambanner.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img-other/ourstorybanner.jpg" class="d-block" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="container box-exp-txt">
+            <h2 class="text-center mt-5 mb-2">Our Story</h2>
+            <p style="font-weight: 300;">AmeriSurveyors LLC is a full-service professional land surveying firm that is headquartered in San Antonio, Texas. Our staff are qualified in their area of expertise and include; Texas registered professional land surveyors, certified title
+                abstractors, CAD survey technicians, field crews and administrative personnel.
+                <br> Combining our extensive land surveying experience with our civil engineering knowledge and utilizing our state-of-the-art instruments along with electronic data collection methods, we produce and deliver on-time accurate land surveys.
+                Collaboratively working with our clients, we manage their expectations and satisfy their land survey needs by delivering what we promise, always.
+            </p>
+            <br>
+            <br>
+        </div>
+
+        <div class="container box-exp-txt">
+            <h2 class="text-center mt-5 mb-2">Our Team</h2>
+            <p style="font-weight: 300;">The Amerisurveyors team is structured to effectively engage with our clients and satisfy their land surveying needs. We measure our success by how good we are in managing our client expectations, when satisfying their land survey requirements,
+                to the highest possible quality standards.<br>
+                <br> Towards achieving our client satisfaction objectives, our Client Support Team is dedicated to working closely with our clients to ensure that we fully understand their needs against what we can offer, so that we can deliver what they
+                require by managing their expectations.<br>
+                <br> Once a client has provided the necessary information and is committed to getting a land survey, the Field Survey Team conducts a physical survey of the property. Utilizing state-of-the-art instruments and standardized data collection
+                methods, this team takes great care and accurately surveys the client’s property.
+                <br>
+                <br> The Services Support Team peer reviews the information, conducts research, obtains necessary data from external agencies, develops and certifies the land survey, which is then delivered to a client. This team, in addition to supporting
+                the Client Support Team and the Field Survey Team, is also responsible for setting the overall AmeriSurveyors business direction.
+            </p>
+            <br>
+            <br>
+        </div>
+
+        <div class="container box-exp-txt">
+            <h2 class="text-center mt-5 mb-2">Client Support Team</h2>
+            <p style="font-weight: 300;">The Client Support Team is trained and skilled to provide precise information about our products and services and is the first point of contact for our clients. Their motto is “provide an excellent client experience” for a competitively priced
+                product. Working closely with our other teams, the Client Support Team responds to client queries, and guides them towards purchasing the correct type of land survey which would satisfy their needs.
+            </p>
+            <br>
+            <div class="row mb-5">
+                <div class="col"><img src="assets/team/CST-NAME1-Hilary.jpg" alt=""> <br>Client Service Specialist <br> Hilary</div>
+                <div class="col"><img src="assets/team/CST-NAME2-Roxanne.jpg" alt=""> <br>Client Service Specialist Team Leader<br>Roxanne</div>
+                <div class="col"><img src="assets/team/CST-NAME3-Leah.jpg" alt=""> <br>Client Service Specialist <br> Leah</div>
+            </div>
+            <div class="row mb-5">
+                <div class="col"><img src="assets/team/CST-NAME4-Leslie.jpg" alt=""> <br>Sales & Marketing Manager <br> Leslie</div>
+                <div class="col"><img src="assets/team/CST-NAME5-Michelle.jpg" alt=""> <br>Accounting Specialist<br>Michelle</div>
+                <div class="col"><img src="assets/team/CST-NAME9-Vanessa.jpg" alt=""> <br>Accounting Coordinator <br> Vanessa</div>
+            </div>
+            <div class="row mb-5">
+                <div class="col"><img src="assets/team/CST-NAME7-Raul.jpg" alt=""> <br>General Manager <br> Raul</div>
+                <div class="col"><img src="assets/team/CST-NAME8-Brian.jpg" alt=""> <br>Business Development Executive<br>Brian</div>
+                <div class="col"><img src="assets/team/CST-NAME6-Manny.jpg" alt=""> <br>Business Development Executive<br> Manny</div>
+            </div>
+            <br>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Home</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Career Inquiry</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Client Support Team</a></li>
+                    <li><a href="#">Field Survey Team</a></li>
+                    <li><a href="#">Services Support Team</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Operating Areas</h4>
+                <ul>
+                    <li><a href="#">South Texas</a></li>
+                    <li><a href="#">Central Texas</a></li>
+                    <li><a href="#">North Texas</a></li>
+                    <li><a href="#">San Francisco</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">As-Built Survey</a></li>
+                    <li><a href="#">Boundary Survey</a></li>
+                    <li><a href="#">Form Survey</a></li>
+                    <li><a href="#">Building Envelope <br> Survey</a></li>
+                    <li><a href="#">Topographic Survey</a></li>
+                    <li><a href="#">Tree Survey</a></li>
+                    <li><a href="#">Elevation Certificate</a></li>
+                    <li><a href="#">Commercial/<br>NSPS Survey</a></li>
+                    <li><a href="#">Easement Survey</a></li>
+                    <li><a href="#">TABC Survey</a></li>
+                    <li><a href="#">Other Services</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <p>Connect On</p>
+                <div class="icons">
+                    <a href="#" title="email"><img src="assets/socials/email.svg" alt="Email"></a>
+                    <a href="#"><img src="assets/socials/youtube.svg" alt="YouTube"></a>
+                    <a href="#"><img src="assets/socials/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="assets/socials/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="assets/socials/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="assets/socials/tiktok.svg" alt="TikTok"></a>
+                </div>
+            </div>
+            <div class="legal-info">
+                <p>Firm Registration No. 10146400 | San Antonio, Texas</p>
+                <p>Firm Registration No. 10193905 | Dallas, Texas</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="copyright-info">
+            <p>Copyright &copy; 2021 - 2024 AmeriSurveyors, LLC.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+</html>
